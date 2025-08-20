@@ -1,0 +1,19 @@
+{
+  "name": "anew",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.34.3",
+    "astro": "^5.7.13",
+    "starlight-blog": "^0.23.2",
+    "starlight-obsidian": "^0.9.0",
+    "starlight-theme-obsidian": "^0.3.1"
+  }
+}
