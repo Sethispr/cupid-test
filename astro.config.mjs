@@ -25,11 +25,13 @@ export default defineConfig({
 				'./src/styles/custom.css',
 			],
 			sidebar: [
-			 {
+				{
 					label: 'Intro',
-					autogenerate: { directory: 'section' },
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Intro', slug: 'intro/intro' },
+					],
 				},
-			],
 				{
 					label: 'Profile',
 					autogenerate: { directory: 'profile' },
