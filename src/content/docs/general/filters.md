@@ -2,7 +2,6 @@
 title: Filters
 description: Page for explaining filters.
 ---
-
 These are the filters used in the bot to make sorting easier, most are similar. You can also **combine filters** for more specific results.
 
 ---
