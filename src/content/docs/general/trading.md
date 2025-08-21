@@ -11,9 +11,9 @@ To start a trade, use `=trade @username` to start a trade with another player.
 - Add multiple cards: `=cadd -i 9, 89` (comma-separated positions).
 
 **Filter options**:
-  - `=cadd -n [name]` (card name)
-  - `=cadd -m [1-3]` (mastery level)
-  - `=cadd -r [card rarity]` (e.g. `secr`)
+  - `=cadd -n [name]`
+  - `=cadd -m [1-3]` (maturation 1 to 3)
+  - `=cadd -r [card rarity]`
   - `=cadd -s [series name]`
 
 :::note 
@@ -25,8 +25,8 @@ You can combine filters. (e.g. `=cadd -r m -a nightfall` adds your mythic nightf
 ## Managing Trades
 
 - View the trade window: `=trview` or alias `=trv`.
-- Cancel trade: `=trc`.
-- Confirm trade: `=trcon`.
+- Cancel trade: `=trc`
+- Confirm trade: `=trcon`
 
 ---
 
