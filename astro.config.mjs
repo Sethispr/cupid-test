@@ -29,7 +29,7 @@ export default defineConfig({
 					label: 'Intro',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Intro', slug: 'intro/intro' },
+						{ label: 'Intro', slug: 'intro/section' },
 					],
 				},
 				{
