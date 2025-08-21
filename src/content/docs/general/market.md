@@ -19,8 +19,6 @@ To purchase a card, use `=mkbuy [card ID]`. Verify the card details and click th
 
 <img width="269" height="498" alt="Market Buying" src="https://github.com/user-attachments/assets/e8b02ed3-05d5-4e6d-a2bc-21a2db530935" />
 
-
-<div style="text-align: center;">
 :::tip[Price Tip]  
 
 For cheaper deals, buy from players in the [Official Server](https://discord.gg/Yvvnm39PpB).
