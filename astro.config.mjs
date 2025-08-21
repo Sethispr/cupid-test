@@ -27,7 +27,7 @@ export default defineConfig({
 			sidebar: [
 			 {
 					label: 'Intro',
-					autogenerate: { directory: 'intro' },
+					autogenerate: { directory: 'section' },
 				},
 			],
 				{
