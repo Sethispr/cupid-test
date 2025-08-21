@@ -25,18 +25,21 @@ export default defineConfig({
 				'./src/styles/custom.css',
 			],
 			sidebar: [
-				{
-					label: 'Intro',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Intro', slug: 'intro/section' },
-					],
-				},
-				{
-					label: 'Profile',
-					autogenerate: { directory: 'profile' },
-				},
-			],
+  {
+    label: 'Intro',
+    items: [
+      { label: 'Intro', slug: 'intro/section' },
+    ],
+  },
+  {
+    label: 'Profile',
+    autogenerate: { directory: 'profile' },
+  },
+  {
+    label: 'General',
+    autogenerate: { directory: 'general' },
+  },
+],
 			plugins: [
 				// Set theme
 				starlightThemeObsidian(),
