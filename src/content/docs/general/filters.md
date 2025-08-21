@@ -2,9 +2,8 @@
 title: Filters
 description: Page for explaining filters.
 ---
-These are the filters used in the bot to make sorting easier, most are similar. You can also **combine filters** for more specific results.
 
----
+These are the filters used in the bot to make sorting easier, most are similar. You can also **combine filters** for more specific results.
 
 ### Filters for `=cdex`
 
@@ -50,7 +49,7 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 
 ---
 
-### Filters for `=trade`
+### Filters for `=cadd` (used for trade)
 
 - **-a** [ability name, e.g. `nightfall`]
 - **-e** [element, e.g. `balance`, `fairy`, `light`, `dark`, etc.]
@@ -70,8 +69,6 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 - **-c** [color hex code, e.g. `#fff271`]
 - **-f** [font name]
 
----
-
 :::note[Customization Tip]  
 
 You can also set these filters by clicking the Edit button inside your ID card at [Cupid's Website](https://cupidparadise.top/profile). You cannot combine filters for `=select`. 
@@ -80,11 +77,12 @@ You can also set these filters by clicking the Edit button inside your ID card a
 
 ---
 
-## Examples
+### Examples
 
 Do:
 - `=cdex -e fire, -a armor`(show cards with the fire element and armor piercing ability in the card dex)
 - `=inv -r m -mat 3` (shows your mythic maturation 3 cards in `=inv`)
+- `=cadd -r secr -s noragami` (adds all your secret rare noragami cards to the trade)
 
 Don't:
 - `=cdex -e` (missing element name)
