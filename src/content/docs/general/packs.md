@@ -3,28 +3,47 @@ title: Packs
 description: Page for the different packs and their rates.
 ---
 
-Packs are obtained through the shop `=pshop`, `=dpshop` and `=emberpack`
+Each pack gives 6 different random cards with different rarities.
 
-:::note
+Obtain packs from the pack shop (`=pshop`), daily pack shop (`=dpshop`), or the Ember pack command (`=emberpack`). There are 8 pack types available: Rusty Relics Pack, Standard Deck Pack, Gold Back Pack, Secret Glow Pack, Mythic Chronicles Pack, Cosmic Odyssey Pack, Lost Treasures Pack, and Ember Pack.
 
-Ember packs are not in the pack shop, they are a separate pack. There are 2 pack shops, the regular `=pshop` and the daily `=dpshop` (costs more than regular packs) which has fixed series and rotates every day 
-
+:::note[Ember Pack Details]  
+The Ember Pack is separate and not available in either pack shops. Use `=emberpack` to view rates and `=epbuy` to purchase it. It costs 30 Ember Crystals.  
 :::
 
-There are 8 types of packs: `Rusty Relics Pack`, `Standard Deck Pack`, `Gold Back Pack`, `Secret Glow Pack`, `Mythic Chronicles Pack`, `Cosmic Odyssey Pack`, `Lost Treasures Pack` and `Ember Pack` (**not** in `=pshop`)
+## Usage
 
-To buy a pack, type `=pbuy [pack name/number]`. Each pack you buy will give you 6 random cards.
+To purchase standard or daily packs, run `=pbuy [pack name/number]` (e.g., `=pbuy rusty relics` or `=pbuy 1` based on shop listing). Each pack yields 6 cards.
 
-## Rusty Relic Packs
+Aliases for shops: `=ps` for `=pshop`, `=dps` for `=dpshop`.
 
-**3,000 gold**
+For Ember Pack, use `+epbuy` to buy and `=emberpack` to check rates.
 
-Basic: __70__%
+## Pack Details
 
-Rare: __29__%
+Pack details include standard costs, daily costs and rarity drop rates. Daily packs cost more and rotate series everyday.
 
-Super Rare: __1__%
+| Pack Name              | Standard Cost    | Daily Cost      | Rarity Chances |
+|------------------------|------------------|-----------------|----------------|
+| Rusty Relics Pack     | 3,000 gold      | 4,500 gold     | - 70% Basic<br>- 29% Rare<br>- 1% Super Rare |
+| Standard Deck Pack    | 10,000 gold     | 15,000 gold    | - 60% Basic<br>- 35% Rare<br>- 5% Super Rare |
+| Gold Back Pack        | 50,000 gold     | 75,000 gold    | - 50% Basic<br>- 35% Rare<br>- 15% Super Rare |
+| Secret Glow Pack      | 100,000 gold    | 150,000 gold   | - 70% Rare<br>- 25% Super Rare<br>- 4.99% Secret Rare<br>- 0.01% Mythic |
+| Mythic Chronicles Pack| 500,000 gold    | 750,000 gold   | - 70% Super Rare<br>- 20% Secret Rare<br>- 10% Mythic |
+| Cosmic Odyssey Pack   | 1,000,000 gold  | 1,500,000 gold | - 60% Super Rare<br>- 20% Secret Rare<br>- 15% Mythic<br>- 5% Starlight Rare |
+| Lost Treasures Pack   | 3,000,000 gold  | 4,500,000 gold | - 80% Secret Rare<br>- 10% Mythic<br>- 10% Starlight Rare |
+| Ember Pack            | 30 Ember Crystals| N/A            | - 59.99% Secret Rare<br>- 35% Mythic<br>- 5% Starlight Rare |
 
-##  Standard Deck Pack
+## Examples
 
-**
+Always use exact pack names or numbers from the shop. Case-insensitive.
+
+Do:
+- `=pbuy rusty relics`
+- `=pbuy 3` (for Gold Back Pack)
+- `=epbuy` (for Ember Pack)
+
+Don't:
+- `=pbuy rusty` (incomplete name)
+- `=pbuy gold backpack` (wrong spacing)
+- `=pbuy ember` (use `=epbuy` instead)
