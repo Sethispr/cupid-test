@@ -1,6 +1,6 @@
 ---
 title: Cupid Guide
-description: Cupid's official begginer guide by @sethyl
+description: Cupid's official begginer guide
 ---
 
 Welcome to the official **Cupid guide**! Learn the basics from here, explore the bot’s commands, and more.
