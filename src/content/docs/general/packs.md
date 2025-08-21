@@ -7,17 +7,17 @@ Each pack gives 6 different random cards with different rarities.
 
 Obtain packs from the pack shop (`=pshop`), daily pack shop (`=dpshop`), or the Ember pack command (`=emberpack`). There are 8 pack types available: Rusty Relics Pack, Standard Deck Pack, Gold Back Pack, Secret Glow Pack, Mythic Chronicles Pack, Cosmic Odyssey Pack, Lost Treasures Pack, and Ember Pack.
 
-:::note[Ember Pack Details]  
+:::note[Ember Pack]  
 The Ember Pack is separate and not available in either pack shops. Use `=emberpack` to view rates and `=epbuy` to purchase it. It costs 30 Ember Crystals.  
 :::
 
 ## Usage
 
-To purchase standard or daily packs, run `=pbuy [pack name/number]` (e.g., `=pbuy rusty relics` or `=pbuy 1` based on shop listing). Each pack yields 6 cards.
+To purchase **standard** or **daily packs**, type **`=pbuy [pack name/number]`** (e.g. `=pbuy rusty relics` or `=pbuy 1` based on shop listing). Each pack has 6 cards.
 
-Aliases for shops: `=ps` for `=pshop`, `=dps` for `=dpshop`.
+**Aliases**: **`=ps`** for `=pshop`, **`=dps`** for `=dpshop`.
 
-For Ember Pack, use `+epbuy` to buy and `=emberpack` to check rates.
+For Ember Pack, use **`=epbuy`** to buy and **`=emberpack`** to check rates.
 
 ## Pack Details
 
@@ -36,14 +36,14 @@ Pack details include standard costs, daily costs and rarity drop rates. Daily pa
 
 ## Examples
 
-Always use exact pack names or numbers from the shop. Case-insensitive.
+Always use exact pack names or numbers from the shop. The pack numbers are based on the shop listing at (`=pshop`).
 
 Do:
-- `=pbuy rusty relics`
+- `=pbuy rusty relics pack`
 - `=pbuy 3` (for Gold Back Pack)
 - `=epbuy` (for Ember Pack)
 
 Don't:
-- `=pbuy rusty` (incomplete name)
+- `=pbuy rusty relics` (incomplete name)
 - `=pbuy gold backpack` (wrong spacing)
 - `=pbuy ember` (use `=epbuy` instead)
