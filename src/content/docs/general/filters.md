@@ -84,10 +84,10 @@ You can also set these filters by clicking the Edit button inside your ID card a
 ## Examples
 
 Do:
-- `=cdex -e fire, -a armor`(shows cards with the elements fire and the ability armor piercing)
-- `=inv -r m -mat 3` (shows your mythic maturation 3 cards)
+- `=cdex -e fire, -a armor`(show cards with the fire element and armor piercing ability in the card dex)
+- `=inv -r m -mat 3` (shows your mythic maturation 3 cards in `=inv`)
 
 Don't:
-- `=cdex -e` (missing value)
-- `=mk -p 12` (wrong filter)
-- `=select -bg Bond -a Dipper`  (cannot combine filters for =select`)
+- `=cdex -e` (missing element name)
+- `=mk -p 12` (wrong filter, -p filter is only for `=inv`)
+- `=select -bg Bond -a Dipper`  (cannot combine filters for `=select`)
