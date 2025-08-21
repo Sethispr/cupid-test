@@ -3,8 +3,6 @@ title: Market
 description: Page for explaining market command.
 ---
 
-This page explains how to use the market command to buy and sell cards in the game.
-
 View cards available on the market with `=market [filters]` or the alias `=mk [filters]`.
 
 :::note[Filters] 
@@ -39,12 +37,12 @@ To check your cards sold in the market, use `=marketlist` or the alias `=mklist`
 
 ## Examples
 
-Do:
+**Do**:
 - `=mkbuy 123456` (valid ID)
 - `=mksell 676767 500000` (ID and price)
 - `=mklist` (correct command)
 
-Don't:
+**Don't**:
 - `=mkbuy` (missing ID)
 - `=mksell 67767` (missing price)
 - `=mklisting` (wrong command, use `=mklist`)
