@@ -5,7 +5,7 @@ description: Page explaining how to set the card drops channel in your server.
 
 Use the `=setspawn` command at the channel you want the bot to drop cards, it will set that channel for card drops.
 
-:::note
+:::warning[Permissions]
 
 Only the Server Owner can set the spawn channel.
 
