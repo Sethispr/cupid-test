@@ -1,57 +1,65 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-
 import starlightThemeObsidian from 'starlight-theme-obsidian';
 import { createStarlightObsidianPlugin } from 'starlight-obsidian';
+import starlightImageZoom from 'starlight-image-zoom';
+import backToTop from 'astro-back-to-top';
 
-const [vault1_StarlightObsidian, vault1_ObsidianSidebarGroup] = createStarlightObsidianPlugin()
-const [vault2_StarlightObsidian, vault2_ObsidianSidebarGroup] = createStarlightObsidianPlugin()
+const [vault1_StarlightObsidian, vault1_ObsidianSidebarGroup] = createStarlightObsidianPlugin();
+const [vault2_StarlightObsidian, vault2_ObsidianSidebarGroup] = createStarlightObsidianPlugin();
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://sethispr.github.io/cupid-test/',
-	base: '/cupid-test',
-	integrations: [
-		starlight({
-			title: 'Cupid Docs',
-			social: [
-				{
-					icon: 'github', label: 'GitHub', href: 'https://github.com/sethispr/cupid-test',
-				}
-			],
-			customCss: [
-				// Path to custom CSS file
-				'./src/styles/custom.css',
-			],
-			sidebar: [
-  {
-    label: 'Welcome!',
-    items: [
-      { label: 'Introduction', slug: 'intro/section' },
-    ],
-  },
-		{
-    label: 'User Customization',
-    autogenerate: { directory: 'user customization' },
-  },
-		{
-    label: 'Server Setup',
-    autogenerate: { directory: 'server setup' },
-  },
-  {
-    label: 'Profile',
-    autogenerate: { directory: 'profile' },
-  },
-  {
-    label: 'General',
-    autogenerate: { directory: 'general' },
-  },
-],
-			plugins: [
-				// Set theme
-				starlightThemeObsidian(),
-			]
-		}),
-	],
+  site: 'https://sethispr.github.io/cupid-test/',
+  base: '/cupid-test',
+  integrations: [
+    starlight({
+      title: 'Cupid Docs',
+      social: [
+        {
+          icon: 'github',
+          label: 'GitHub',
+          href: 'https://github.com/sethispr/cupid-test',
+        },
+      ],
+      customCss: [
+        // Path to custom CSS file
+        './src/styles/custom.css',
+      ],
+      sidebar: [
+        {
+          label: 'Welcome!',
+          items: [
+            { label: 'Introduction', slug: 'intro/section' },
+          ],
+        },
+        {
+          label: 'User Customization',
+          autogenerate: { directory: 'user customization' },
+        },
+        {
+          label: 'Server Setup',
+          autogenerate: { directory: 'server setup' },
+        },
+        {
+          label: 'Profile',
+          autogenerate: { directory: 'profile' },
+        },
+        {
+          label: 'General',
+          autogenerate: { directory: 'general' },
+        },
+      ],
+      plugins: [
+        starlightThemeObsidian(),
+        starlightImageZoom(),
+        vault1_StarlightObsidian,
+        vault2_StarlightObsidian,
+      ],
+    }),
+    backToTop({
+      position: 'bottom-right'
+    }),
+  ],
 });
