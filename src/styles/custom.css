@@ -9,3 +9,18 @@
 .sl-badge:not(:last-of-type) {
     margin-inline-end: 0.25rem;
 }
+
+.starlight-scroll-to-top-button {
+  background-color: #2e2e2e;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 0.8;
+}
+
+.starlight-scroll-to-top-button:hover {
+  opacity: 1;
+}
