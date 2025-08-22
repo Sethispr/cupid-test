@@ -59,8 +59,6 @@ export default defineConfig({
           smoothScroll: true,
           threshold: 20,
         }),
-        vault1_StarlightObsidian,
-        vault2_StarlightObsidian,
       ],
     }),
   ],
