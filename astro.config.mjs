@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 import starlightThemeObsidian from 'starlight-theme-obsidian';
 import { createStarlightObsidianPlugin } from 'starlight-obsidian';
 import starlightImageZoom from 'starlight-image-zoom';
-import backToTop from 'astro-back-to-top';
+import starlightScrollToTop from 'starlight-scroll-to-top';
 
 const [vault1_StarlightObsidian, vault1_ObsidianSidebarGroup] = createStarlightObsidianPlugin();
 const [vault2_StarlightObsidian, vault2_ObsidianSidebarGroup] = createStarlightObsidianPlugin();
@@ -24,7 +24,6 @@ export default defineConfig({
         },
       ],
       customCss: [
-        // Path to custom CSS file
         './src/styles/custom.css',
       ],
       sidebar: [
@@ -54,12 +53,15 @@ export default defineConfig({
       plugins: [
         starlightThemeObsidian(),
         starlightImageZoom(),
+        starlightScrollToTop({
+          showTooltip: false,
+          position: 'right',
+          smoothScroll: true,
+          threshold: 20,
+        }),
         vault1_StarlightObsidian,
         vault2_StarlightObsidian,
       ],
-    }),
-    backToTop({
-      position: 'bottom-right'
     }),
   ],
 });
