@@ -31,6 +31,14 @@ export default defineConfig({
       { label: 'Intro', slug: 'intro/section' },
     ],
   },
+		{
+    label: 'User Customization',
+    autogenerate: { directory: 'user customization' },
+  },
+		{
+    label: 'Server Setup',
+    autogenerate: { directory: 'server setup' },
+  },
   {
     label: 'Profile',
     autogenerate: { directory: 'profile' },
