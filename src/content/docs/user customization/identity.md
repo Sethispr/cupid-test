@@ -3,16 +3,56 @@ title: Identity
 description: Page explaining how to customize your identity card.
 ---
 
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
 View your identity card with `=identity` or the alias `=id`. Customize it using the `=select` command with the filters.
 
 ## Customization Options
 
-- Set avatar: `=select -a [avatar name]`
-- Set border: `=select -b [border name]`
-- Set background: `=select -bg [background name]`
-- Set font: `=select -f [font name]`
-- Set color: `=select -c [hex color code, e.g. #fff271]`
-- Set badge: `=select -badge [badge name]`
+<Tabs>
+<TabItem label="Avatar">
+
+Command: =select -a [avatar name]  
+Example: =select -a Hanako  
+Description: Changes the avatar image on your card.
+
+</TabItem>
+<TabItem label="Border">
+
+Command: =select -b [border name]  
+Example: =select -b gold  
+Description: Applies a border style to your card.
+
+</TabItem>
+<TabItem label="Background">
+
+Command: =select -bg [background name]  
+Example: =select -bg forest  
+Description: Sets the background design.
+
+</TabItem>
+<TabItem label="Font">
+
+Command: =select -f [font name]  
+Example: =select -f classic  
+Description: Changes the text font style.
+
+</TabItem>
+<TabItem label="Color">
+
+Command: =select -c [hex color code, e.g., #fff271]  
+Example: =select -c #55d1d0  
+Description: Sets the card's color using a hex code.
+
+</TabItem>
+<TabItem label="Badge">
+
+Command: =select -badge [badge name]  
+Example: =select -badge star  
+Description: Adds a badge to your card.
+
+</TabItem>
+</Tabs>
 
 Check your owned cosmetics with `=vault` or the alias `=vlt`.  
 
