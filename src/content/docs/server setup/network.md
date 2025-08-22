@@ -5,13 +5,13 @@ description: Page explaining how to setup the raid network channel at your serve
 
 Use the `=raidnetwork on` command, or aliases `=raidnet on` or `=rdnet on`, in the channel where you want **public raids** to appear. 
 
-Only raids set to **Public** with `=rd public` will be displayed, not all raids.
-
 :::note[Permissions]
   
-Only the Server Owner can set the raid network channel.  
+Only the Server Owner can set the raid network channel. Only raids set to **Public** with `=rd public` will be displayed, not all raids.
 
 :::
+
+---
 
 ### Examples
 
