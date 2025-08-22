@@ -5,9 +5,6 @@ import starlightThemeObsidian from 'starlight-theme-obsidian';
 import { createStarlightObsidianPlugin } from 'starlight-obsidian';
 import starlightImageZoom from 'starlight-image-zoom';
 
-const [vault1_StarlightObsidian, vault1_ObsidianSidebarGroup] = createStarlightObsidianPlugin();
-const [vault2_StarlightObsidian, vault2_ObsidianSidebarGroup] = createStarlightObsidianPlugin();
-
 // https://astro.build/config
 export default defineConfig({
   site: 'https://sethispr.github.io/cupid-test/',
@@ -16,12 +13,9 @@ export default defineConfig({
     starlight({
       title: 'Cupid Docs',
       social: [
-        {
-          icon: 'github',
-          label: 'GitHub',
-          href: 'https://github.com/sethispr/cupid-test',
-        },
-      ],
+          { icon: 'github', label: 'GitHub', href: 'https://github.com/sethispr/cupid-test/' },
+          { icon: 'discord', label: 'Discord', href: 'https://discord.gg/Yvvnm39PpB' },
+        ],
       customCss: [
         './src/styles/custom.css',
       ],
