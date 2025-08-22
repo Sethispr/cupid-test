@@ -5,12 +5,12 @@ description: Page for explaining filters.
 
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-These are the filters used in the bot to make sorting easier, most are similar. You can also **combine filters** for more specific results.
+These are the filters used in the bot to make sorting easier, most filters are similar. You can also **combine filters** for more specific results.
 
 ## Filter Options
 
 <Tabs>
-<TabItem label="Filters for `=cdex`">
+<TabItem label="=cdex">
 
 - **-a** [ability name, e.g. `nightfall`]
 - **-e** [element, e.g. `balance`, `fairy`, `light`, `dark`, etc.]
@@ -18,7 +18,7 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 - **-s** [series name]
 
 </TabItem>
-<TabItem label="Filters for `=market`">
+<TabItem label="=market">
 
 - **-a** [ability name, e.g. `nightfall`]
 - **-e** [element, e.g. `balance`, `fairy`, `light`, `dark`, etc.]
@@ -28,7 +28,7 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 - **-s** [series name]
 
 </TabItem>
-<TabItem label="Filters for `=inv`">
+<TabItem label="=inv">
 
 - **-a** [ability name, e.g. `nightfall`]
 - **-e** [element, e.g. `balance`, `fairy`, `light`, `dark`, etc.]
@@ -39,7 +39,7 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 - **-s** [series name]
 
 </TabItem>
-<TabItem label="Filters for `=rd`">
+<TabItem label="=rd">
 
 - **-a** [ability name, e.g. `nightfall`]
 - **-d** [raid difficulty, e.g. `=rd -d Easy`]
@@ -50,7 +50,9 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 - **-s** [series name]
 
 </TabItem>
-<TabItem label="Filters for `=cadd` (used for trade)">
+<TabItem label="=cadd">
+
+`=cadd` is used when trading for adding cards.
 
 - **-a** [ability name, e.g. `nightfall`]
 - **-e** [element, e.g. `balance`, `fairy`, `light`, `dark`, etc.]
@@ -60,7 +62,9 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 - **-s** [series name]
 
 </TabItem>
-<TabItem label="Filters for `=select` (used for ID/profile)">
+<TabItem label="=select">
+
+`=select` is used for updating cosmetics in your ID/profile.
 
 - **-a** [avatar name]
 - **-b** [border name]
@@ -69,14 +73,16 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 - **-c** [color hex code, e.g. `#fff271`]
 - **-f** [font name]
 
-</TabItem>
-</Tabs>
-
 :::note 
 
 You can also set these filters by clicking the Edit button inside your ID card at [Cupid's Website](https://cupidparadise.top/profile). You cannot combine filters for `=select`.  
 
 :::
+
+</TabItem>
+</Tabs>
+
+---
 
 ### Examples
 
