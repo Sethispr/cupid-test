@@ -3,18 +3,22 @@ title: Filters
 description: Page for explaining filters.
 ---
 
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
 These are the filters used in the bot to make sorting easier, most are similar. You can also **combine filters** for more specific results.
 
-### Filters for `=cdex`
+## Filter Options
+
+<Tabs>
+<TabItem label="Filters for `=cdex`">
 
 - **-a** [ability name, e.g. `nightfall`]
 - **-e** [element, e.g. `balance`, `fairy`, `light`, `dark`, etc.]
 - **-n** [card name]
 - **-s** [series name]
 
----
-
-### Filters for `=market`
+</TabItem>
+<TabItem label="Filters for `=market`">
 
 - **-a** [ability name, e.g. `nightfall`]
 - **-e** [element, e.g. `balance`, `fairy`, `light`, `dark`, etc.]
@@ -23,9 +27,8 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 - **-r** [rarity, e.g. `secr`]
 - **-s** [series name]
 
----
-
-### Filters for `=inv`
+</TabItem>
+<TabItem label="Filters for `=inv`">
 
 - **-a** [ability name, e.g. `nightfall`]
 - **-e** [element, e.g. `balance`, `fairy`, `light`, `dark`, etc.]
@@ -35,9 +38,8 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 - **-r** [rarity, e.g. `secr`]
 - **-s** [series name]
 
----
-
-### Filters for `=rd`
+</TabItem>
+<TabItem label="Filters for `=rd`">
 
 - **-a** [ability name, e.g. `nightfall`]
 - **-d** [raid difficulty, e.g. `=rd -d Easy`]
@@ -47,9 +49,8 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 - **-r** [rarity, e.g. `secr`]
 - **-s** [series name]
 
----
-
-### Filters for `=cadd` (used for trade)
+</TabItem>
+<TabItem label="Filters for `=cadd` (used for trade)">
 
 - **-a** [ability name, e.g. `nightfall`]
 - **-e** [element, e.g. `balance`, `fairy`, `light`, `dark`, etc.]
@@ -58,9 +59,8 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 - **-r** [rarity, e.g., `secr`]
 - **-s** [series name]
 
----
-
-### Filters for `=select` (used for ID/profile)
+</TabItem>
+<TabItem label="Filters for `=select` (used for ID/profile)">
 
 - **-a** [avatar name]
 - **-b** [border name]
@@ -69,22 +69,23 @@ These are the filters used in the bot to make sorting easier, most are similar. 
 - **-c** [color hex code, e.g. `#fff271`]
 - **-f** [font name]
 
-:::note[Customization Tip]  
+</TabItem>
+</Tabs>
 
-You can also set these filters by clicking the Edit button inside your ID card at [Cupid's Website](https://cupidparadise.top/profile). You cannot combine filters for `=select`. 
+:::note 
 
-:::  
+You can also set these filters by clicking the Edit button inside your ID card at [Cupid's Website](https://cupidparadise.top/profile). You cannot combine filters for `=select`.  
 
----
+:::
 
 ### Examples
 
-Do:
-- `=cdex -e fire, -a armor`(show cards with the fire element and armor piercing ability in the card dex)
+**Do**:
+- `=cdex -e fire, -a armor` (show cards with the fire element and armor piercing ability in the card dex)
 - `=inv -r m -mat 3` (shows your mythic maturation 3 cards in `=inv`)
 - `=cadd -r secr -s noragami` (adds all your secret rare noragami cards to the trade)
 
-Don't:
+**Don't**:
 - `=cdex -e` (missing element name)
 - `=mk -p 12` (wrong filter, -p filter is only for `=inv`)
-- `=select -bg Bond -a Dipper`  (cannot combine filters for `=select`)
+- `=select -bg Bond -a Dipper` (cannot combine filters for `=select`)
