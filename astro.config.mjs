@@ -26,9 +26,9 @@ export default defineConfig({
 			],
 			sidebar: [
   {
-    label: 'Intro',
+    label: 'Welcome!',
     items: [
-      { label: 'Intro', slug: 'intro/section' },
+      { label: 'Introduction', slug: 'intro/section' },
     ],
   },
 		{
