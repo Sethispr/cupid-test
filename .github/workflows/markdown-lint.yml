@@ -14,5 +14,5 @@ jobs:
         with:
           globs: '**/*.{md,mdx}'  # include .mdx files
           fix: true               # auto-fix what it can
-          fail: false             # never fail workflow
           config: '.markdownlint.yaml'
+        continue-on-error: true
