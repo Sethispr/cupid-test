@@ -1,8 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import starlightThemeObsidian from 'starlight-theme-obsidian';
-import { createStarlightObsidianPlugin } from 'starlight-obsidian';
+import starlightThemeBlack from 'starlight-theme-black';
 import starlightImageZoom from 'starlight-image-zoom';
 
 // https://astro.build/config
@@ -13,9 +12,9 @@ export default defineConfig({
     starlight({
       title: 'Cupid Docs',
       social: [
-          { icon: 'github', label: 'GitHub', href: 'https://github.com/sethispr/cupid-test/' },
-          { icon: 'discord', label: 'Discord', href: 'https://discord.gg/Yvvnm39PpB' },
-        ],
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/sethispr/cupid-test/' },
+        { icon: 'discord', label: 'Discord', href: 'https://discord.gg/Yvvnm39PpB' },
+      ],
       customCss: [
         './src/styles/custom.css',
       ],
@@ -42,7 +41,7 @@ export default defineConfig({
         },
       ],
       plugins: [
-        starlightThemeObsidian(),
+        starlightThemeBlack(),
         starlightImageZoom(),
       ],
     }),
