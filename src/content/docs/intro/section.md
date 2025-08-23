@@ -1,6 +1,6 @@
 ---
 title: Intro
-description: Cupid's official begginer guide
+description: Cupid's official beginner guide
 ---
 
 Welcome to the official **Cupid guide**! Learn the basics from here, explore the bot’s commands, and more. You can search up a command/guide with the keyboard shortcut `ctrl k`.
