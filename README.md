@@ -11,7 +11,7 @@
 <kbd><img width="2160" height="1394" alt="image" src="https://github.com/user-attachments/assets/93a19adc-7d28-43b0-b87a-6884bc1da083" />
 </kbd>
 
-Outdated image, also note that this repo is constantly being worked on and commit messages are non-existent and will be a messy project for now.
+Outdated image, also note that this repo is constantly being worked on and commit messages are non-existent and will be a messy project with incomplete stuff for now.
 
 ## Contributing
 
