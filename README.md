@@ -8,10 +8,9 @@
   <strong>Simple Docs for all of Cupid's features</strong>
 </p>
 
-<kbd><img width="2160" height="1394" alt="image" src="https://github.com/user-attachments/assets/93a19adc-7d28-43b0-b87a-6884bc1da083" />
-</kbd>
+<kbd>![image](https://github.com/user-attachments/assets/5a7fc975-1709-4574-97f7-272c6e0ceccb)</kbd>
 
-Outdated image, also note that this repo is constantly being worked on and commit messages are non-existent and will be a messy project with incomplete stuff for now.
+Note that this repo is constantly being worked on and commit messages are non-existent and will be a messy project with incomplete stuff for now.
 
 ## Contributing
 
