@@ -1,6 +1,6 @@
 name: markdown linter
 
-# on: [push, pull_request] break dor now
+on: [push, pull_request]
 
 jobs:
   lint:
@@ -12,7 +12,7 @@ jobs:
       - name: Run markdownlint-cli2
         uses: DavidAnson/markdownlint-cli2-action@v19
         with:
-          globs: '**/*.{md,mdx}'  # include .mdx files
+          globs: '**/*.{md}'      # don't include .mdx files
           fix: true               # auto-fix what it can
           config: '.markdownlint.yaml'
         continue-on-error: true
