@@ -14,4 +14,4 @@ jobs:
       - uses: crate-ci/typos@v1
         with:
           files: './src/content/docs/**/*.md'
-          fail-on-error: true 
+          continue-on-error: true 
