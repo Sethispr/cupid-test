@@ -13,7 +13,7 @@
     "@astrojs/starlight": "^0.34.3",
     "astro": "^5.7.13",
     "starlight-blog": "^0.23.2",
-    "starlight-theme-black": "^0.6.0",
-    "starlight-image-zoom": "^0.13.0"
+    "starlight-image-zoom": "^0.13.0",
+    "starlight-theme-rapide": "^0.6.1"  
   }
 }
