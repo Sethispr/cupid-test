@@ -39,6 +39,10 @@ export default defineConfig({
           label: 'General',
           autogenerate: { directory: 'general' },
         },
+        {
+          label: 'Clans',
+          autogenerate: { directory: 'clans' },
+        },
       ],
       plugins: [
         starlightThemeRapide(),
