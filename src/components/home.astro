@@ -1,9 +1,9 @@
 ---
-import { getCollection } from "astro:content";
-import { LinkCard, CardGrid, Badge } from "@astrojs/starlight/components";
+import { getCollection } from 'astro:content';
+import { LinkCard, CardGrid, Badge } from '@astrojs/starlight/components';
 
-const posts = (await getCollection("docs"))
-  .filter((post) => post.id !== "index")
+const posts = (await getCollection('docs'))
+  .filter(post => post.id !== 'index')
   .sort((a, b) => {
     const nameA = a.id;
     const nameB = b.id;
@@ -18,20 +18,20 @@ const posts = (await getCollection("docs"))
   });
 
 // Extract tags and remove duplicates
-const tags = posts.flatMap((item) => item.data.tags);
-const uniqueTags = [...new Set(tags.filter((tag) => tag !== undefined))];
+const tags = posts.flatMap(item => item.data.tags);
+const uniqueTags = [...new Set(tags.filter(tag => tag !== undefined))];
 
-const getDescription = (tags) => {
+const getDescription = tags => {
   if (!Array.isArray(tags)) {
-    return "N.A.";
+    return 'N.A.';
   }
-  return tags.join(", ");
+  return tags.join(', ');
 };
 ---
 
 <div>
   {
-    uniqueTags.map((tag) => (
+    uniqueTags.map(tag => (
       <Badge text={String(tag)} variant="success" size="large" />
     ))
   }
@@ -42,7 +42,7 @@ const getDescription = (tags) => {
 
 <CardGrid>
   {
-    posts.map((post) => (
+    posts.map(post => (
       <LinkCard
         title={post.data.title}
         href={post.id}

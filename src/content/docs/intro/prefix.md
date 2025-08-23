@@ -11,7 +11,7 @@ The default prefix for Cupid Bot is `=`. You can also use the bot by **mentionin
 
 :::note
 
-Once Cupid reaches 100 servers, the `=` prefix will be deprecated. After that, only `@Cupid` mentions and `/` slash commands will be supported.  
+Once Cupid reaches 100 servers, the `=` prefix will be deprecated. After that, only `@Cupid` mentions and `/` slash commands will be supported.
 
 :::
 
@@ -20,10 +20,12 @@ Once Cupid reaches 100 servers, the `=` prefix will be deprecated. After that, o
 ### Examples
 
 **Do**:
+
 - `=nick shiro`
 - `@Cupid id`
 - `/clan`
 
 **Don't**:
+
 - Try to change the prefix (not supported)
 - Rely solely on `=` after the bot is in 100 servers (use `@Cupid` or `/` instead)

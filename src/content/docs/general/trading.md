@@ -11,12 +11,13 @@ To start a trade, use `=trade @username` to start a trade with another player.
 - Add multiple cards: `=cadd -i 9, 89` (comma-separated positions).
 
 **Filter options**:
-  - `=cadd -n [name]`
-  - `=cadd -m [1-3]` (maturation 1 to 3)
-  - `=cadd -r [card rarity]`
-  - `=cadd -s [series name]`
 
-:::note 
+- `=cadd -n [name]`
+- `=cadd -m [1-3]` (maturation 1 to 3)
+- `=cadd -r [card rarity]`
+- `=cadd -s [series name]`
+
+:::note
 
 You can combine filters. (e.g. `=cadd -r m -a nightfall` adds your mythic nightfall cards to the trade)
 
@@ -33,10 +34,12 @@ You can combine filters. (e.g. `=cadd -r m -a nightfall` adds your mythic nightf
 ## Examples
 
 **Do**:
+
 - `=trade @sethyl` (correct format and username)
 - `=cadd -i 5, 10` (adds 2 cards to trade)
 - `=trcon` (confirm trade)
 
 **Don't**:
+
 - `=trade` (missing @username)
 - `=cadd -i` (missing position)

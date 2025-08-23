@@ -15,9 +15,9 @@ Stones are used to upgrade your **card's level**. Check your stones with the `=s
 
 :::tip
 
-Raids are the fastest way to gain stones.  
+Raids are the fastest way to gain stones.
 
-:::  
+:::
 
 ## How to Use Stones
 
@@ -28,8 +28,10 @@ To level up a card, use the `=stenh` command followed by the card's inventory po
 ### Examples
 
 **Do**:
+
 - `=stenh 3` (upgrades the card level for card inventory position number 3)
 - `=st` (check stones)
 
 **Don't**:
+
 - `=stenh` (missing position)

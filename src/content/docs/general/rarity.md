@@ -5,7 +5,7 @@ description: Page for explaining card rarities.
 
 There are **6 rarities**: `Basic`, `Rare`, `Super Rare`, `Secret Rare`, `Mythic`, `Starlight Rare`.
 
-:::tip[Alias]  
+:::tip[Alias]
 
 `b`, `r`, `sr`, `secr`, `m`, `starr`
 
@@ -20,7 +20,7 @@ There are **6 rarities**: `Basic`, `Rare`, `Super Rare`, `Secret Rare`, `Mythic`
 - Each rarity has a specific level cap:
 
 | Rarity           | Level Cap |
-|------------------|-----------|
+| ---------------- | --------- |
 | `Basic`          | 20        |
 | `Rare`           | 30        |
 | `Super Rare`     | 50        |

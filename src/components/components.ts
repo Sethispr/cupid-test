@@ -1,2 +1,1 @@
-
-export { default as HomeComponent } from "./home.astro";
+export { default as HomeComponent } from './home.astro';

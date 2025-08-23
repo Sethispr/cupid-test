@@ -5,10 +5,10 @@ description: Page for explaining market command.
 
 View cards available on the market with `=market [filters]` or the alias `=mk [filters]`.
 
-:::note[Filters] 
+:::note[Filters]
 
-Check market filters [here](https://sethispr.github.io/cupid-test/general/filters/) 
-  
+Check market filters [here](https://sethispr.github.io/cupid-test/general/filters/)
+
 :::
 
 ## Market Buying
@@ -17,7 +17,7 @@ To purchase a card, use `=mkbuy [card ID]`. Verify the card details and click th
 
 <img width="269" height="498" alt="Market Buying" src="https://github.com/user-attachments/assets/e8b02ed3-05d5-4e6d-a2bc-21a2db530935" />
 
-:::tip[Price Tip]  
+:::tip[Price Tip]
 
 For cheaper deals, buy from players in the [Official Server](https://discord.gg/Yvvnm39PpB).
 
@@ -38,11 +38,13 @@ To check your cards sold in the market, use `=marketlist` or the alias `=mklist`
 ## Examples
 
 **Do**:
+
 - `=mkbuy 123456` (valid ID)
 - `=mksell 676767 500000` (ID and price)
 - `=mklist` (correct command)
 
 **Don't**:
+
 - `=mkbuy` (missing ID)
 - `=mksell 67767` (missing price)
 - `=mklisting` (wrong command, use `=mklist`)
