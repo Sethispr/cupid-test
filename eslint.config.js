@@ -7,6 +7,11 @@ export default [
   ...tseslint.configs.recommended,
   ...astro.configs.recommended,
   {
+    ignores: [
+      '.github/workflows/**',
+    ],
+  },
+  {
     files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx', '**/*.astro'],
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^_' }],
