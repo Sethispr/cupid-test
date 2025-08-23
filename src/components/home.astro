@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import { LinkCard, CardGrid, Badge } from "@astrojs/starlight/components";
 
 const posts = (await getCollection("docs"))
-  .filter((post) => post.id != "index")
+  .filter((post) => post.id !== "index")
   .sort((a, b) => {
     const nameA = a.id;
     const nameB = b.id;
@@ -14,13 +14,12 @@ const posts = (await getCollection("docs"))
       return 1;
     }
 
-    // names must be equal
     return 0;
   });
 
 // Extract tags and remove duplicates
 const tags = posts.flatMap((item) => item.data.tags);
-const uniqueTags = [...new Set(tags.filter((tag) => tag != undefined))];
+const uniqueTags = [...new Set(tags.filter((tag) => tag !== undefined))];
 
 const getDescription = (tags) => {
   if (!Array.isArray(tags)) {
