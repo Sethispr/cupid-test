@@ -11,6 +11,9 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Cupid Docs',
+      editLink: {
+        baseUrl: 'https://github.com/Sethispr/cupid-test/edit/main/src/content/docs/',
+      },
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/sethispr/cupid-test/' },
         { icon: 'discord', label: 'Discord', href: 'https://discord.gg/Yvvnm39PpB' },
