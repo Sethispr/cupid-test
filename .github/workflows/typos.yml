@@ -1,4 +1,4 @@
-name: Check Typos
+name: Auto-Fix Typos
 on:
   push:
     branches: [main]
@@ -6,12 +6,22 @@ on:
     branches: [main]
   workflow_dispatch: # Allows manual triggering
 
+permissions:
+  contents: write # Required for committing changes
+
 jobs:
-  spellcheck:
+  spellcheck-fix:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }} # Ensures PR branch is checked out
       - uses: crate-ci/typos@v1
         with:
-          files: './src/content/docs/**/*.md'
-          continue-on-error: true 
+          files: './src/content/docs/**/*.md' # Targets Starlight Markdown files
+          write-changes: true # Enables auto-fixing
+      - name: Commit fixed typos
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: auto-fix typos'
+          file_pattern: 'src/content/docs/**/*.md'
