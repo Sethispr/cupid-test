@@ -5,7 +5,7 @@ description: Page explaining how to customize your profile nickname.
 
 Set your nickname using the `=nick [name]` command, (e.g. `=nick sora`).
 
-This name will be displayed to raid parties, leaderboards, profile, identity, clan, etc.
+> This name will be displayed to raid parties, leaderboards, profile, identity, clan, etc.
 
 :::note
 
