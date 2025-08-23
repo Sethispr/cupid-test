@@ -41,7 +41,7 @@ export default defineConfig({
         },
       ],
       plugins: [
-        starlightThemeBlack(),
+        starlightThemeBlack({}),
         starlightImageZoom(),
       ],
     }),
