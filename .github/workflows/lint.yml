@@ -22,9 +22,9 @@ jobs:
       - name: Install dependencies
         run: bun install
       - name: Run Prettier Check
-        run: bun run format:check
+        run: bun run format:check src/
       - name: Run ESLint
-        run: bun run lint
+        run: bun run lint src/
 
   fix:
     if: github.event_name == 'push'
@@ -38,13 +38,13 @@ jobs:
       - name: Install dependencies
         run: bun install
       - name: Run Prettier Fix
-        run: bun run format
+        run: bun run format src/
       - name: Run ESLint Fix
-        run: bun run lint:fix
+        run: bun run lint:fix src/
       - name: Commit and Push Fixes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
+          git add src/
           git commit -m "Auto-fix formatting and lint issues" || echo "No changes to commit"
           git push
