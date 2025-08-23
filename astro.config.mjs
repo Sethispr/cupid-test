@@ -22,9 +22,7 @@ export default defineConfig({
       sidebar: [
         {
           label: 'Welcome!',
-          items: [
-            { label: 'Introduction', slug: 'intro/section' },
-          ],
+          autogenerate: { directory: 'intro' },
         },
         {
           label: 'User Customization',
