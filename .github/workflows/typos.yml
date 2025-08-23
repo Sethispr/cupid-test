@@ -1,9 +1,11 @@
-name: Spellcheck
+name: Check Typos
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch: # Allows manual triggering
+
 jobs:
   spellcheck:
     runs-on: ubuntu-latest
@@ -12,3 +14,4 @@ jobs:
       - uses: crate-ci/typos@v1
         with:
           files: './src/content/docs/**/*.md'
+          fail-on-error: true 
