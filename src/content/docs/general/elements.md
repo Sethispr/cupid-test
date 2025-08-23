@@ -13,6 +13,8 @@ Deal more damage and take less damage with an elemental advantage. You will take
 
 ---
 
-:::note[Elemental Tips]  
-If a raid is difficult try using different elements and play around with the team's elemental disadvantage
+:::note[Raid Tip]
+
+If a raid is difficult try using different elements and play around with the team's elemental disadvantage.
+
 :::
