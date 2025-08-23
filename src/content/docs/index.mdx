@@ -13,3 +13,24 @@ hero:
     - text: GitHub Repository
       link: https://github.com/sethispr/cupid-docs/
 ---
+
+import { Card, CardGrid } from '@astrojs/starlight/components'
+
+## just testing card grids
+
+<CardGrid stagger>
+  <Card title="Install the theme" icon="puzzle">
+    Check the [getting started guide](/getting-started/) for installation
+    instructions.
+  </Card>
+  <Card title="Configure the theme" icon="rocket">
+    Edit your config in the `astro.config.mjs` file.
+  </Card>
+  <Card title="Preview the theme" icon="seti:image">
+    Check out the [example pages](/examples/kitchen-sink/) to see the theme in
+    action.
+  </Card>
+  <Card title="Read the docs" icon="open-book">
+    Learn more in the [Starlight Rapide Docs](/getting-started/).
+  </Card>
+</CardGrid>
