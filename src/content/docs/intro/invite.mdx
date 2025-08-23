@@ -3,15 +3,17 @@ title: Invite Link
 description: Page for the bot invite link.
 ---
 
-import { LinkButton } from '@astrojs/starlight/components'
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
-Invite Cupid using their [Oauth2 link](https://discord.com/oauth2/authorize?client_id=930688392247775313&permissions=140123695168&scope=bot). 
+<CardGrid stagger>
+  <Card title="Invite Link" icon="external">
+    Invite Cupid using their [Oauth2
+    link](https://discord.com/oauth2/authorize?client_id=930688392247775313&permissions=140123695168&scope=bot).
+  </Card>
+<Card title="Vote for Cupid" icon="heart">
+    Vote for Cupid through the [rank.top
+    website](https://rank.top/bot/cupidparadise/vote) to get free rewards and
+    limited items!
+  </Card>
+</CardGrid>
 
-Vote for Cupid through the [rank.top website](https://rank.top/bot/cupidparadise/vote) to get free rewards and limited items!
-
-<LinkButton href="https://discord.com/oauth2/authorize?client_id=930688392247775313&permissions=140123695168&scope=bot" icon="rocket" variant="primary">
-  Invite Cupid
-</LinkButton>
-<LinkButton href="https://rank.top/bot/cupidparadise/vote" icon="external" variant="secondary">
-  Vote for Cupid
-</LinkButton>
