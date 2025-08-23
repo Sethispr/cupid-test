@@ -1,28 +1,29 @@
-            - name: Lychee Broken Link Checker
-  # You may pin to the exact commit or the version.
-  # uses: lycheeverse/lychee-action@01a5c94d8e012550040658854b90a7a7301e75ca
-  uses: lycheeverse/lychee-action@v2.6.0
-  with:
-    # Lychee arguments (https://github.com/lycheeverse/lychee#commandline-parameters)
-    args: # optional, default is --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst'
-    # Enable debug output in action (set -x). Helpful for troubleshooting.
-    debug: # optional
-    # Fail entire pipeline on error (i.e. when lychee exit code is not 0)
-    fail: # optional, default is true
-    # Fail entire pipeline if no links were found
-    failIfEmpty: # optional, default is true
-    # Summary output format (e.g. json)
-    format: # optional, default is markdown
-    # Write GitHub job summary at the end of the job (written on Markdown output only)
-    jobSummary: # optional, default is true
-    # Use custom version of lychee link checker
-    lycheeVersion: # optional, default is v0.20.0
-    # Summary output file path
-    output: # optional, default is lychee/out.md
-    # Add Markdown Styled Checkboxes to the output
-    checkbox: # optional, default is true
-    # Your GitHub Access Token, defaults to: {{ github.token }}
-    token: # optional, default is ${{ github.token }}
-    # Directory to run lychee in
-    workingDirectory: # optional, default is .
-          
+name: Links
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: "00 18 * * *"
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: false
+
+      - name: Create Issue From File
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: report, automated issue
