@@ -35,10 +35,6 @@ export default defineConfig({
           autogenerate: { directory: 'server setup' },
         },
         {
-          label: 'Profile',
-          autogenerate: { directory: 'profile' },
-        },
-        {
           label: 'General',
           autogenerate: { directory: 'general' },
         },
