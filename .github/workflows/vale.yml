@@ -1,0 +1,23 @@
+name: Vale Grammar
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '**/*.mdx'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Vale
+        run: |
+          wget -O vale.tar.gz https://github.com/errata-ai/vale/releases/download/v2.24.0/vale_2.24.0_Linux_64-bit.tar.gz
+          tar -xvzf vale.tar.gz
+          sudo mv vale /usr/local/bin/
+
+      - name: Run Vale
+        run: vale --config .vale.ini --output=github-pr-check
