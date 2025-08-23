@@ -52,6 +52,8 @@ no-inline-html:                      # MD033 - Disallow inline HTML (but allow s
     - kbd
     - p
     - a
+    - tabs
+    - tabitems
 
 # Emphasis Rules
 strong-style: consistent              # MD050 - Enforce consistent bold syntax (**text** or __text__)
