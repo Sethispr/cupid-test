@@ -1,4 +1,4 @@
-name: Lint and Format
+name: Lint with Bun
 
 on:
   push:
@@ -8,25 +8,19 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   lint:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
+      - uses: oven-sh/setup-bun@v2
       - name: Install dependencies
-        run: npm install
-
+        run: bun install
       - name: Run Prettier
-        run: npx prettier --check .
-
+        run: bun run format:check
       - name: Run ESLint
-        run: npx eslint .
+        run: bun run lint
