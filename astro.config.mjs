@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import starlightThemeBlack from 'starlight-theme-black';
+import starlightThemeRapide from 'starlight-theme-rapide';
 import starlightImageZoom from 'starlight-image-zoom';
 
 // https://astro.build/config
@@ -41,7 +41,7 @@ export default defineConfig({
         },
       ],
       plugins: [
-        starlightThemeBlack({}),
+        starlightThemeRapide(),
         starlightImageZoom(),
       ],
     }),
