@@ -9,10 +9,11 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write  # Needed for auto-fix on push
 
 jobs:
-  lint:
+  check:
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,7 +21,30 @@ jobs:
       - uses: oven-sh/setup-bun@v2
       - name: Install dependencies
         run: bun install
-      - name: Run Prettier
+      - name: Run Prettier Check
         run: bun run format:check
       - name: Run ESLint
         run: bun run lint
+
+  fix:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: oven-sh/setup-bun@v2
+      - name: Install dependencies
+        run: bun install
+      - name: Run Prettier Fix
+        run: bun run format
+      - name: Run ESLint Fix
+        run: bun run lint:fix
+      - name: Commit and Push Fixes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Auto-fix formatting and lint issues" || echo "No changes to commit"
+          git push
