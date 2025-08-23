@@ -3,9 +3,11 @@ title: Card Drops Channel
 description: Page explaining how to set the card drops channel in your server.
 ---
 
+import { Steps } from '@astrojs/starlight/components'
+
 Use the `=setspawn` command at the channel you want the bot to drop cards, it will set that channel for card drops.
 
-:::warn[Permissions]
+:::note[Permissions]
 
 Only the Server Owner can set the spawn channel.
 
@@ -17,8 +19,13 @@ Only the Server Owner can set the spawn channel.
 
 **Do**:
 
-- Go to the channel you want for card drop spawns and type `=setspawn`. You will then see a message from the bot saying "Spawns Redirected to here." if successful.
-- `=setspawn` in your card drops channel (sets the card drops to the channel you used the command in)
+<Steps>
+
+1. Go to the channel you want for card drop spawns and type `=setspawn`. You will then see a message from the bot saying "Spawns Redirected to here." if successful.
+
+2. `=setspawn` in your card drops channel (sets the card drops to the channel you used the command in)
+
+</Steps>
 
 **Don't**:
 
