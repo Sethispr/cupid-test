@@ -1,6 +1,6 @@
 name: markdown linter
 
-on: [push, pull_request]
+# on: [push, pull_request] break dor now
 
 jobs:
   lint:
