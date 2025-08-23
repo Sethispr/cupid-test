@@ -5,13 +5,11 @@ description: Page for explaining card rarities.
 
 There are **6 rarities**: `Basic`, `Rare`, `Super Rare`, `Secret Rare`, `Mythic`, `Starlight Rare`.
 
-:::tip[Alias]
+:::tip[Rarity Alias]
 
 `b`, `r`, `sr`, `secr`, `m`, `starr`
 
 :::
-
----
 
 ## Rarity Details
 
