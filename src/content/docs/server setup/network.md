@@ -1,6 +1,7 @@
 title: Raid Network Channel
 description: Page explaining how to setup the raid network channel at your server.
 pagefind: false
+
 ---
 
 import { Steps } from '@astrojs/starlight/components'
@@ -21,12 +22,11 @@ Only the Server Owner can set the raid network channel. Only raids set to **Publ
 
 <Steps>
 
-1. Go to the **#channel** you want for **public raid notifications** 
+1. Go to the **#channel** you want for **public raid notifications**
 
 2. Type `=rdnet on`. You will then see a message from the bot saying **"Raid Network enabled here."** if successful.
 
    <Steps>
-
    1. Use `=rd public` in a raid to make it **visible** in the **network channel**.
 
    </Steps>
