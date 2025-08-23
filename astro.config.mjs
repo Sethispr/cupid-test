@@ -14,6 +14,7 @@ export default defineConfig({
       editLink: {
         baseUrl: 'https://github.com/Sethispr/cupid-test/edit/main/',
       },
+      lastUpdated: true,
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/sethispr/cupid-test/' },
         { icon: 'discord', label: 'Discord', href: 'https://discord.gg/Yvvnm39PpB' },
