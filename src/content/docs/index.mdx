@@ -1,6 +1,19 @@
 ---
 title: Cupid Docs
 description: Home page for Cupid's beginner guide.
+translations:
+  id:
+    title: Dokumen Cupid
+    description: Halaman utama untuk panduan pemula Cupid.
+  es:
+    title: Documentos de Cupid
+    description: Página principal para la guía de principiantes de Cupid.
+  zh-CN:
+    title: Cupid文档
+    description: Cupid新手指南的主页。
+  ja:
+    title: Cupidドキュメント
+    description: Cupidの初心者ガイドのホームページ。
 head:
   - tag: title
     content: Cupid Docs
@@ -17,18 +30,38 @@ editUrl: false
 lastUpdated: false
 hero:
   tagline: Cupid Paradise is a Anime RPG style bot where you can enjoy battling with favorite cards from different anime series, games, etc. Join up raid lobbies, fight floor battles and more!
+  translations:
+    id: Cupid Paradise adalah bot bergaya RPG Anime di mana kamu bisa menikmati pertarungan dengan kartu favorit dari berbagai seri anime, game, dll. Bergabunglah dengan lobi serangan, bertarung di pertempuran lantai, dan banyak lagi!
+    es: ¡Cupid Paradise es un bot estilo RPG de anime donde puedes disfrutar luchando con tus cartas favoritas de diferentes series de anime, juegos, etc. Únete a los lobbies de incursiones, lucha en batallas de pisos y más!
+    zh-CN: Cupid Paradise 是一个动漫RPG风格的机器人，你可以在这里使用来自不同动漫系列、游戏等的喜爱的卡片进行战斗。加入突袭大厅，参与楼层战斗，还有更多！
+    ja: Cupid Paradiseは、アニメRPGスタイルのボットで、さまざまなアニメシリーズやゲームなどからお気に入りのカードを使って戦いを楽しむことができます。レイドロビーに参加したり、フロアバトルを戦ったり、その他にもたくさん！
   image:
     alt: Card Gallery
     file: https://raw.githubusercontent.com/Sethispr/cupid-test/refs/heads/main/src/assets/IMG_1338.png
   actions:
     - text: Get Started
+      translations:
+        id: Mulai Sekarang
+        es: Comenzar
+        zh-CN: 开始
+        ja: 始める
       link: intro/section
       icon: open-book
     - text: Support Server
+      translations:
+        id: Server Dukungan
+        es: Servidor de Soporte
+        zh-CN: 支持服务器
+        ja: サポートサーバー
       link: https://discord.com/invite/Yvvnm39PpB
       icon: discord
       variant: minimal
     - text: GitHub Repo
+      translations:
+        id: Repositori GitHub
+        es: Repositorio de GitHub
+        zh-CN: GitHub仓库
+        ja: GitHubリポジトリ
       link: https://github.com/sethispr/cupid-docs/
       icon: github
       variant: minimal
@@ -39,19 +72,43 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## Next Steps
 
 <CardGrid stagger>
-  <Card title="Invite Link" icon="external">
+  <Card title="Invite Link" icon="external"
+        translations={
+          id: { title: "Tautan Undangan" },
+          es: { title: "Enlace de Invitación" },
+          zh-CN: { title: "邀请链接" },
+          ja: { title: "招待リンク" }
+        }>
     Invite Cupid using their [Oauth2
     link](https://discord.com/oauth2/authorize?client_id=930688392247775313&permissions=140123695168&scope=bot).
   </Card>
-  <Card title="Configure your server" icon="setting">
+  <Card title="Configure your server" icon="setting"
+        translations={
+          id: { title: "Konfigurasi Server Anda" },
+          es: { title: "Configura tu servidor" },
+          zh-CN: { title: "配置你的服务器" },
+          ja: { title: "サーバーを設定する" }
+        }>
     Customize your server to set [drop/raid network
     channels](https://sethispr.github.io/cupid-test/server-setup/drops/).
   </Card>
-  <Card title="Check the new Cupid website" icon="rocket">
+  <Card title="Check the new Cupid website" icon="rocket"
+        translations={
+          id: { title: "Lihat Situs Web Cupid Baru" },
+          es: { title: "Visita el nuevo sitio web de Cupid" },
+          zh-CN: { title: "查看新的Cupid网站" },
+          ja: { title: "新しいCupidウェブサイトを確認する" }
+        }>
     Check out the [new official Cupid website](https://cupidparadise.top) to see
     raids, card dex, your card inventory and more!
   </Card>
-  <Card title="Vote for Cupid" icon="heart">
+  <Card title="Vote for Cupid" icon="heart"
+        translations={
+          id: { title: "Pilih Cupid" },
+          es: { title: "Vota por Cupid" },
+          zh-CN: { title: "为Cupid投票" },
+          ja: { title: "Cupidに投票する" }
+        }>
     Vote for Cupid through the [rank.top
     website](https://rank.top/bot/cupidparadise/vote) to get free rewards and
     limited items!
