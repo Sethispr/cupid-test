@@ -5,7 +5,7 @@ description: Page for the different packs and their rates.
 
 Each pack gives **6 different random cards** with **different rarities**.
 
-Obtain packs from the **pack shop** (`=pshop`), **daily pack shop** (`=dpshop`), or from the **Ember pack shop** (`=emberpack`). There are **8 pack types** available: Rusty Relics Pack, Standard Deck Pack, Gold Back Pack, Secret Glow Pack, Mythic Chronicles Pack, Cosmic Odyssey Pack, Lost Treasures Pack, and Ember Pack.
+Obtain packs from the **pack shop** (`=pshop`), **daily pack shop** (`=dpshop`), or from the **Ember pack shop** (`=emberpack`). There are **8 different packs** in the bot.
 
 :::note[Ember Pack]  
 The **Ember Pack** is **separate** and **not available** in either pack shops. Use `=emberpack` to view rates and `=epbuy` to purchase it. It costs **30 Ember Crystals**.  
