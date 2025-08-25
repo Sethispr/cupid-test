@@ -5,12 +5,7 @@ description: Page explaining how to use commands with the bot's prefix.
 
 The default prefix for Cupid Bot is `=`. You can also use the bot by **mentioning** it (e.g. `@Cupid`) or using **Discord slash commands** (e.g. `/`). Currently, the prefix cannot be changed.
 
-import { Badge } from '@astrojs/starlight/components'
-
 - **Default Prefix**: Use `=` followed by a command (e.g. `=id`).
-
-<Badge text="Deprecated" variant="caution" size="medium" />
-
 - **Mention Method**: Mention `@Cupid` to use commands (e.g. `@Cupid id`)
 - **Slash Commands**: Use `/` for specific actions (e.g. `/identity`)
 
