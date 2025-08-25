@@ -7,6 +7,10 @@ FAQ stuff here... e.g. will i get rewards if i dont do damage, etc
 
 what is clan tokens for, how do i donate to clan, etc
 
+how to open raid chests
+
+how to enhance, check stone, maturation
+
 raid difficulty clarification
 
 best abilites, team
