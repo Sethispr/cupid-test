@@ -53,9 +53,22 @@ body::-webkit-scrollbar-thumb:hover {
   background: rgba(61, 163, 114, 0.9);
 }
 
-/* Ensure no arrows (most browsers don't show them, but this is a safeguard) */
+/* Ensure no arrows */
 html::-webkit-scrollbar-button,
 body::-webkit-scrollbar-button,
 .sl-sidebar::-webkit-scrollbar-button {
   display: none;
+}
+
+/* Reading progress bar */
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: rgba(65, 184, 131, 0.7); /* Vitesse green, transparent */
+  border-radius: 0 2px 2px 0; /* Rounded right edge */
+  transition: width 0.3s ease; /* Smooth width change */
+  z-index: 1000; /* Above other content */
 }
