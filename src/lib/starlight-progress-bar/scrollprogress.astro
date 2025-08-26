@@ -1,0 +1,57 @@
+---
+/** StarlightProgressBar Astro component
+ * This component can be used for manual integration
+ */
+export interface Props {
+  height?: string;
+  color?: string;
+  position?: 'top' | 'bottom';
+  animation?: 'smooth' | 'instant';
+  zIndex?: number;
+  enabled?: boolean;
+  showOnMobile?: boolean;
+  showOnDesktop?: boolean;
+  debounce?: number;
+  offset?: number;
+  customCSS?: Record<string, string>;
+}
+
+const {
+  height = '4px',
+  color = 'rgba(65, 184, 131, 0.7)',
+  position = 'top',
+  animation = 'smooth',
+  zIndex = 1000,
+  enabled = true,
+  showOnMobile = true,
+  showOnDesktop = true,
+  debounce = 16,
+  offset = 0,
+  customCSS = { 'border-radius': '0 2px 2px 0' },
+} = Astro.props;
+
+const customStyles = Object.entries(customCSS)
+  .map(([key, value]) => `${key}: ${value};`)
+  .join(' ');
+---
+
+{enabled && (
+  <style>
+    .spb-progress {
+      position: fixed;
+      {position}: {offset}px;
+      left: 0;
+      width: 0;
+      height: {height};
+      background: {color};
+      z-index: {zIndex};
+      transition: {animation === 'smooth' ? 'width 0.3s ease' : 'none'};
+      transform-origin: left center;
+      will-change: width;
+      contain: strict;
+      {customStyles}
+    }
+    {!showOnMobile && '@media (max-width: 767px) { .spb-progress { display: none; } }'}
+    {!showOnDesktop && '@media (min-width: 768px) { .spb-progress { display: none; } }'}
+  </style>
+)}
