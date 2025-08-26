@@ -47,18 +47,6 @@ export default defineConfig({
       plugins: [
         starlightThemeRapide(),
         starlightImageZoom(),
-        starlightProgressBar({
-          height: '5px',
-          color: '#42b833',
-          position: 'top',
-          animation: 'smooth',
-          zIndex: 50,
-          enabled: true,
-          showOnMobile: true,
-          showOnDesktop: true,
-          debounce: 16,
-          offset: 0,
-        }),
       ],
     }),
   ],
