@@ -1,11 +1,51 @@
-:root {
-  --sl-content-width: 60rem;
+/* Firefox scrollbar styles */
+html,
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #41b883 #1c1c1e;
 }
 
-.sl-link-card {
-  margin: 0;
+.sl-sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: #41b883 #1c1c1e;
 }
 
-.sl-badge:not(:last-of-type) {
-  margin-inline-end: 0.25rem;
+/* WebKit scrollbar styles (Chrome, Safari, Edge) */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: #1c1c1e; /* Subtle dark track to match Vitesse dark bg */
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: #41b883; /* Vitesse green */
+  border-radius: 4px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: #3da372; /* Slightly darker green for hover */
+}
+
+.sl-sidebar::-webkit-scrollbar {
+  width: 6px; /* Slightly thinner for sidebar */
+}
+
+.sl-sidebar::-webkit-scrollbar-track {
+  background: transparent; /* Invisible track for a clean look */
+}
+
+.sl-sidebar::-webkit-scrollbar-thumb {
+  background: #41b883;
+  border-radius: 3px;
+}
+
+.sl-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #3da372;
 }
