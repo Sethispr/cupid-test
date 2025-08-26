@@ -2,50 +2,60 @@
 html,
 body {
   scrollbar-width: thin;
-  scrollbar-color: #41b883 #1c1c1e;
+  scrollbar-color: rgba(65, 184, 131, 0.7) #1c1c1e;
 }
 
 .sl-sidebar {
   scrollbar-width: thin;
-  scrollbar-color: #41b883 #1c1c1e;
+  scrollbar-color: rgba(65, 184, 131, 0.7) transparent;
 }
 
 /* WebKit scrollbar styles (Chrome, Safari, Edge) */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 html::-webkit-scrollbar-track,
 body::-webkit-scrollbar-track {
-  background: #1c1c1e; /* Subtle dark track to match Vitesse dark bg */
+  background: #1c1c1e; /* Dark Vitesse background */
+  border-radius: 5px;
 }
 
 html::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
-  background: #41b883; /* Vitesse green */
-  border-radius: 4px;
+  background: rgba(65, 184, 131, 0.7); /* Semi-transparent Vitesse green */
+  border-radius: 5px; /* Slightly rounded edges */
+  transition: background 0.3s ease; /* Smooth hover transition */
 }
 
 html::-webkit-scrollbar-thumb:hover,
 body::-webkit-scrollbar-thumb:hover {
-  background: #3da372; /* Slightly darker green for hover */
+  background: rgba(61, 163, 114, 0.9); /* Slightly darker, less transparent on hover */
 }
 
 .sl-sidebar::-webkit-scrollbar {
-  width: 6px; /* Slightly thinner for sidebar */
+  width: 8px; /* Thinner for sidebar */
 }
 
 .sl-sidebar::-webkit-scrollbar-track {
-  background: transparent; /* Invisible track for a clean look */
+  background: transparent; /* Invisible track for clean look */
 }
 
 .sl-sidebar::-webkit-scrollbar-thumb {
-  background: #41b883;
-  border-radius: 3px;
+  background: rgba(65, 184, 131, 0.7);
+  border-radius: 4px; /* Slightly rounded */
+  transition: background 0.3s ease;
 }
 
 .sl-sidebar::-webkit-scrollbar-thumb:hover {
-  background: #3da372;
+  background: rgba(61, 163, 114, 0.9);
+}
+
+/* Ensure no arrows (most browsers don't show them, but this is a safeguard) */
+html::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button,
+.sl-sidebar::-webkit-scrollbar-button {
+  display: none;
 }
