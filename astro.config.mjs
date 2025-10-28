@@ -10,7 +10,7 @@ export default defineConfig({
   base: '/cupid-test',
   integrations: [
     starlight({
-      title: 'Cupid Docs',
+      title: 'Blair Docs',
       editLink: {
         baseUrl: 'https://github.com/Sethispr/cupid-test/edit/main/',
       },
